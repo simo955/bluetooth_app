@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>271711876987-15rc7eb1n9f20ls91deparp2mt4m0bq9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.271711876987-15rc7eb1n9f20ls91deparp2mt4m0bq9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGlalnuFHbxU-2GAuK5EtnVevagU7eURM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>271711876987</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>simonePatuelli.bluetooth-app-simo</string>
+	<key>PROJECT_ID</key>
+	<string>bluetoothapp-fa3e0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bluetoothapp-fa3e0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:271711876987:ios:7c0944e5dbce1eb9dc6fde</string>
+	<key>DATABASE_URL</key>
+	<string>https://bluetoothapp-fa3e0.firebaseio.com</string>
+</dict>
+</plist>
