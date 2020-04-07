@@ -153,11 +153,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlO-vv-ezc">
+                                <rect key="frame" x="171" y="792" width="72" height="30"/>
+                                <state key="normal" title="Go to chat"/>
+                                <connections>
+                                    <segue destination="cj7-Ut-Blj" kind="show" id="uDf-Ip-Gaj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="uZr-4z-fk3" firstAttribute="centerX" secondItem="11a-JC-bjc" secondAttribute="centerX" id="0eZ-yE-wpC"/>
+                            <constraint firstItem="tlO-vv-ezc" firstAttribute="centerX" secondItem="11a-JC-bjc" secondAttribute="centerX" id="FhZ-Yl-FDj"/>
                             <constraint firstItem="uZr-4z-fk3" firstAttribute="centerY" secondItem="11a-JC-bjc" secondAttribute="centerY" id="otl-cB-c3Z"/>
+                            <constraint firstItem="tEL-9U-rci" firstAttribute="bottom" secondItem="tlO-vv-ezc" secondAttribute="bottom" constant="40" id="ygH-ai-Lmj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tEL-9U-rci"/>
                     </view>
@@ -166,6 +175,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60c-4L-k0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2800" y="185"/>
+        </scene>
+        <!--Chat Table View Controller-->
+        <scene sceneID="F5Z-tw-n3p">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="cj7-Ut-Blj" customClass="chatTableViewController" customModule="bluetooth_app_simo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LZh-X6-9PC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="5Fw-Nu-Sru">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Fw-Nu-Sru" id="Vub-hc-2Ce">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cj7-Ut-Blj" id="isr-CT-KpW"/>
+                            <outlet property="delegate" destination="cj7-Ut-Blj" id="lP9-xp-NSe"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kxy-8n-Mcp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUB-HB-TLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3788" y="185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a4T-MV-fvU">

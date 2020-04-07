@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B04E68B243C853900130CD4 /* unusedCode in Resources */ = {isa = PBXBuildFile; fileRef = 9B04E68A243C853900130CD4 /* unusedCode */; };
+		9B04E68E243CA7EB00130CD4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04E68D243CA7EB00130CD4 /* User.swift */; };
+		9B0BBD32243BD35600F3F3A2 /* chatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0BBD31243BD35600F3F3A2 /* chatTableViewController.swift */; };
 		9B3BF3CBBE93C71C6F30C258 /* Pods_bluetooth_app_simo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA157FB939578C8D2AE35DD /* Pods_bluetooth_app_simo.framework */; };
 		9B3D0E572432A51F004AF8BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3D0E562432A51F004AF8BC /* AppDelegate.swift */; };
 		9B3D0E592432A51F004AF8BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3D0E582432A51F004AF8BC /* SceneDelegate.swift */; };
@@ -36,7 +39,10 @@
 /* Begin PBXFileReference section */
 		1A97580693A21354E938218B /* Pods-bluetooth_app_simo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bluetooth_app_simo.release.xcconfig"; path = "Target Support Files/Pods-bluetooth_app_simo/Pods-bluetooth_app_simo.release.xcconfig"; sourceTree = "<group>"; };
 		2DA157FB939578C8D2AE35DD /* Pods_bluetooth_app_simo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bluetooth_app_simo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B3D0E532432A51F004AF8BC /* bluetooth_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluetooth_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B04E68A243C853900130CD4 /* unusedCode */ = {isa = PBXFileReference; lastKnownFileType = text; path = unusedCode; sourceTree = "<group>"; };
+		9B04E68D243CA7EB00130CD4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B0BBD31243BD35600F3F3A2 /* chatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatTableViewController.swift; sourceTree = "<group>"; };
+		9B3D0E532432A51F004AF8BC /* bluetooth_app_simo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bluetooth_app_simo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3D0E562432A51F004AF8BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B3D0E582432A51F004AF8BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9B3D0E5A2432A51F004AF8BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,9 +90,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B04E68C243CA7D100130CD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B04E68D243CA7EB00130CD4 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9B3D0E4A2432A51F004AF8BC = {
 			isa = PBXGroup;
 			children = (
+				9B04E68A243C853900130CD4 /* unusedCode */,
 				9B3D0E552432A51F004AF8BC /* bluetooth_app_simo */,
 				9B3D0E6C2432A522004AF8BC /* bluetooth_app_simoTests */,
 				9B3D0E542432A51F004AF8BC /* Products */,
@@ -98,7 +113,7 @@
 		9B3D0E542432A51F004AF8BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B3D0E532432A51F004AF8BC /* bluetooth_app.app */,
+				9B3D0E532432A51F004AF8BC /* bluetooth_app_simo.app */,
 				9B3D0E692432A522004AF8BC /* bluetooth_app_simoTests.xctest */,
 			);
 			name = Products;
@@ -107,6 +122,7 @@
 		9B3D0E552432A51F004AF8BC /* bluetooth_app_simo */ = {
 			isa = PBXGroup;
 			children = (
+				9B04E68C243CA7D100130CD4 /* Model */,
 				9B3D0E7F24336D60004AF8BC /* Helpers */,
 				9B3D0E7E2432A589004AF8BC /* View Controllers */,
 				9B3D0E562432A51F004AF8BC /* AppDelegate.swift */,
@@ -136,6 +152,7 @@
 				9B3D0E5A2432A51F004AF8BC /* ViewController.swift */,
 				9B3D0E7C2432A57F004AF8BC /* HomeViewController.swift */,
 				9B3D0E7A2432A572004AF8BC /* LoginViewController.swift */,
+				9B0BBD31243BD35600F3F3A2 /* chatTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -176,7 +193,7 @@
 			);
 			name = bluetooth_app_simo;
 			productName = bluetooth_app_simo;
-			productReference = 9B3D0E532432A51F004AF8BC /* bluetooth_app.app */;
+			productReference = 9B3D0E532432A51F004AF8BC /* bluetooth_app_simo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B3D0E682432A522004AF8BC /* bluetooth_app_simoTests */ = {
@@ -244,6 +261,7 @@
 				9B42264D2433EA7100FF8989 /* GoogleService-Info.plist in Resources */,
 				9B3D0E602432A522004AF8BC /* Assets.xcassets in Resources */,
 				9B3D0E5E2432A51F004AF8BC /* Main.storyboard in Resources */,
+				9B04E68B243C853900130CD4 /* unusedCode in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +325,11 @@
 				9B3D0E572432A51F004AF8BC /* AppDelegate.swift in Sources */,
 				9BBCD6892434BF68006B8243 /* SignUpViewController.swift in Sources */,
 				9B3D0E8124336D70004AF8BC /* Utilities.swift in Sources */,
+				9B0BBD32243BD35600F3F3A2 /* chatTableViewController.swift in Sources */,
 				9B3D0E7B2432A572004AF8BC /* LoginViewController.swift in Sources */,
 				9B3D0E592432A51F004AF8BC /* SceneDelegate.swift in Sources */,
 				9B3D0E7D2432A57F004AF8BC /* HomeViewController.swift in Sources */,
+				9B04E68E243CA7EB00130CD4 /* User.swift in Sources */,
 				9B42264F2433F98700FF8989 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,8 +497,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "simonePatuelli.bluetooth-app";
-				PRODUCT_NAME = bluetooth_app;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonePatuelli.bluetooth-app-simo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,8 +515,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "simonePatuelli.bluetooth-app";
-				PRODUCT_NAME = bluetooth_app;
+				PRODUCT_BUNDLE_IDENTIFIER = "simonePatuelli.bluetooth-app-simo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

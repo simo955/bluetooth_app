@@ -12,4 +12,5 @@ target 'bluetooth_app_simo' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Database'
 end
