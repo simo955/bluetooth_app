@@ -1,6 +1,0 @@
-framework module Pods_bluetooth_app_simo {
-  umbrella header "Pods-bluetooth_app_simo-umbrella.h"
-
-  export *
-  module * { export * }
-}
